@@ -1,0 +1,40 @@
+/*----------------
+    RESET
+-----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*----------------
+    COMMONS
+-----------------*/
+body{
+   font-family: 'Fredoka One', cursive; 
+}
+/*----------------
+    HEADER
+-----------------*/
+.header-top{ 
+    color: aqua;
+    height: 100px;
+    font-size: 25px;
+}
+
+.header-top h1{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.header-bottom{
+    background-color: aqua;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
