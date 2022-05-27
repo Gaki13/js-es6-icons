@@ -158,3 +158,13 @@ function printIcons(icons, container) {
 
 // on load della pagina aggiungo tutte le icone presenti nell'array
 printIcons(icons, containerHTML);
+
+// on select change filtro e stampo le icone
+selectIcon.addEventListener("change", function() {
+    // leggo il valore della select
+    const iconTypeSelected = this.value;
+    // filtro le icone in base al type, icon.type === iconTypeSelected ma se iconTypeSelected è vuoto vuol dire che è stato selezionato "All"
+    const iconsFiltered = icons.filter(elm => elm.type === iconTypeSelected || iconTypeSelected === "");
+    // stampo nuovamente le icone
+    printIcons(iconsFiltered, containerHTML);
+});
